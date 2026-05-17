@@ -3,10 +3,11 @@ on:
     push:
         branches: [ main, develop, release/** ]
     pull_request:
+        types: [ opened ]
         branches: [ main  ]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Pushed to main branch
-        run: echo "Pushed to main branch"
+      - name: Pull Request to main branch
+        run: echo "Open Pull Request to main branch"
