@@ -4,5 +4,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Pushed to main branch
-        run: echo "Pushed to main branch"
+      - name: Worflow Veriable
+        run: echo "The secrect veriable key is ${{ vars.API_KEY_NUMBER}}"
