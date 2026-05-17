@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hello Step
-        run: |
+        run:|
         echo "Hello World from 1st Line."
         echo "Hello World form 2nd Line."
