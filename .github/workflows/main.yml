@@ -4,5 +4,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Worflow Veriable
-        run: echo "The secrect veriable key is ${{ vars.API_KEY_NUMBER}}"
+      - name: Worflow Secrect
+        run: echo "The secrect key is ${{ secrets.SMS_KEY }}"
