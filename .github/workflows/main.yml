@@ -1,8 +1,10 @@
-name: Hello World
+name: Github Action Demo
 on: push
 jobs:
-  build:
+  action-demo:
     runs-on: ubuntu-latest
     steps:
-      - name: Worflow Secrect
-        run: echo "The secrect key is ${{ secrets.SMS_KEY }}"
+      - name: Checkout the code
+        uses: actions/checkout@v4
+      - name: Print index.html file
+        run: cat index.html
